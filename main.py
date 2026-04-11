@@ -3,12 +3,15 @@ import time
 from snake import Snake
 from food import Food
 from scoreboard import ScoreBoard
+from wall import Wall
 
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("Black")
 screen.title("Snake Game")
 screen.tracer(0)
+
+wall = Wall()
 
 snake = Snake()
 food = Food()
